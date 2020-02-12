@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>웹 폼</title>
+    </head>
+    <body>
+        <h1>로그인 폼</h1>
+        <!-- 폼(form) : 사용자의 입력을 받는 태그 -->
+        <form action="">
+            ID :
+            <input type="text">
+            <br>
+            PW :
+            <input type="password">
+            <br><br>
+            <input type="submit" value="확인">
+            <button>취소</button>
+            <hr>
+            <h1>네이버 검색 폼</h1>
+        </form>
+
+        <!-- get 방식 : 데이터를 주소창을 통해 전달 입력받은 -->
+        <form action="https://search.naver.com/search.naver" method="get">
+            <input type="text" name="query">
+            <input type="submit" value="검색">
+        </form>
+        <br><br>
+        <h1>구글 검색 폼</h1>
+        <!-- get 방식 : 데이터를 주소창을 통해 전달 입력받은 -->
+        <form action="https://www.google.com/search" method="get">
+            <input type="text" name="query" minlength="4">
+            <input type="submit" value="검색">
+        </form>
+        <hr>
+        <br><br><br>
+        <h1>input 태그</h1>
+        <h2>텍스트 입력</h2>
+        input text
+        <input
+            type="text"
+            name="test"
+            placeholder="이름을 입력해주세요."
+            size="20"
+            maxlength="10"
+            minlength="5">
+        <br><br><br>
+        input password
+        <input
+            type="password"
+            name="test"
+            placeholder="이름을 입력해주세요."
+            size="20"
+            maxlength="10"
+            minlength="5">
+        <br><br><br>
+        <textarea name="area" id="" cols="30" rows="10"></textarea>
+        <br><br><br><br>
+        나라이름 :
+        <input type="text" list="country">
+        <datalist id="country">
+            <option value="한국">
+                <option value="미국">
+                    <option value="중국">
+                        <option value="일본"></datalist>
+                        <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                        <hr>
+                        <h1>버튼 만들기</h1>
+                        <input type="button" value="새 버튼" onclick="prompt('버튼을 누르셨네요')">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <button type="button">새 버튼2</button>
+                        <br><br><br><br>
+                        <form action="">
+                            <input type="text" name="text">
+                            <input type="submit" value="제출">
+                            <input type="reset" value="초기화">
+                            <button type="reset">초기화2</button>
+                            <button type="reset">제출2</button>
+
+                            <input
+                                type="image"
+                                src="https://image.flaticon.com/icons/svg/2485/2485906.svg"
+                                width="300"
+                                height="300">
+                            <button type="button" width="300" height="300"><img src="https://image.flaticon.com/icons/svg/2485/2485906.svg"></button>
+                        </form>
+
+                        <h1>선택형 입력</h1>
+                        <!-- 목록을 보여주고 그 중에 사용자가 선택하게 하는 것 -->
+                        <h2>체크 박스</h2>
+                        <form action="">
+                            <input type="checkbox" name="ROCK" value="t" checked="checked">락
+                            <input type="checkbox" name="BALLAD" value="t" checked="checked">발라드
+                            <input type="checkbox" name="DANCE" value="t">댄스
+                            <input type="submit">
+                        </form>
+                        <br><br><br>
+                        <br><br><br>
+
+                        <form action="">
+                            <h2>라디오 버튼</h2>
+                            <input type="radio" name="fast" value="1">롯데리아
+                            <input type="radio" name="fast" value="2">맥도날드
+                            <input type="radio" name="fast" value="3">맘스터치
+                            <input type="radio" name="fast" value="4" checked="checked">버거킹
+                            <input type="submit" value="선택">
+                        </form>
+                        <br><br><br>
+                        <br><br><br>
+                        <br><br><br>
+
+                        <h2>콤보 박스</h2>
+                        <form action="">
+                            <select name="food" id="">
+                                <option value="1">김치찌개</option>
+                                <option value="2">된장찌개</option>
+                                <option value="3" selected>부대찌개</option>
+                                <option value="4">그냥찌개</option>
+                            </select>
+                            &nbsp;&nbsp;&nbsp;
+                            <input type="submit" value="선택">
+                        </form>
+                        <br><br><br>
+                        <br><br><br>
+                        <br><br><br>
+
+                        <h1>label</h1>
+                        <label> ID : <input type="text"> </label> <br>
+                        <label for="pw">PW : </label><input type="password" id="pw">
+                        <br><br><br>
+                        <br><br><br>
+                        <br><br><br>
+
+
+
+                        <h1>fieldset</h1>
+                        <form action="">
+                            <fieldset>
+                                <legend>자기소개</legend>
+                                <label >이름 : <input type="text" name="name"> </label><br>
+                                <label >성별 : <input type="radio" name="gender" value="m">남성</label><br>
+                                <label > &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; : <input type="radio" name="gender" value="f">여성</label><br>
+                            </fieldset>
+
+                            <fieldset>
+                                <legend>좋아하는 음식</legend>
+                                <select name="food" id="">
+                                    <option value="1">새우</option>
+                                    <option value="2">연어</option>
+                                    <option value="3">참치</option>
+                                    <option value="4">마요</option>
+                                </select>
+                            </fieldset>
+                            <br>
+                            <input type="submit" value="선택 완료">
+                            <br><br><br><br><br>
+
+                        </form>
+
+
+
+
+                    </body>
+                </html>
