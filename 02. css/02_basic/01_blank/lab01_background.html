@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS 색상 및 배경</title>
+    <style>
+        .bgimg {
+            /* 이미지 */
+            background-image: url("https://www.computerhope.com/jargon/w/web-design.jpg");
+            /* 가로 폭 */
+            width: 1200px;
+            /* 세로 폭 */
+            height: 300px;
+            /* 반복 여부 */
+            background-repeat: round;
+        }
+
+        .bgposition {
+            background-color: beige;
+            height: 400px;
+            font-size: 20px;
+            background-image: url(https://cdn2.iconfinder.com/data/icons/animals-nature-2/50/1F986-duck-128.png);
+            background-repeat: no-repeat;
+            /* background-position: right bottom; */
+            background-position: right top;
+        }
+
+        .bgattachment {
+            background-image: url(https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/rubber-duck-128.png);
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-attachment: fixed;
+        }
+
+        .bgshorthand {
+            height: 00px;
+            /* background-image: url(https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/rubber-duck-128.png);
+            background-color: skyblue;
+            background-attachment: fixed;
+            background-position: top right;
+            background-repeat: no-repeat; */
+            background: url(https://cdn2.iconfinder.com/data/icons/thesquid-ink-40-free-flat-icon-pack/64/rubber-duck-128.png); color: skyblue; background-attachment: fixed; position: top right; background-repeat: no-repeat;
+        }
+
+        .bgsize {
+            height: 240px;
+            background-image: url(https://cdn.pixabay.com/photo/2016/02/19/10/13/nght-sky-1209124_960_720.jpg);
+            /* contain은 모든 이미지가 보일 수 있게
+            가장 짧은 면을 기준으로 사이즈 변경 */
+
+            /* cover는 가장 긴 면을 기준으로 덮어줄 수 있게 설정
+                이미지가 짤릴 수 있음
+             */
+
+            /* px % 등으로 직접 사이즈 지정 가능 */
+        }
+
+        .bggradient {
+            height: 500px;
+                    /* 방향 */
+                    /* 본인이 쓰고 싶은 색깔의 수 - 1 분의 1 씩 % 지정 */
+        }
+
+        .bginsta {
+            height: 500px;
+                    /* xxdeg */
+                    /* 본인이 쓰고 싶은 색깔의 수 - 1 분의 1 씩 % 지정 */
+        }
+    </style>
+</head>
+
+<body>
+    <h1>색상</h1>
+    <p style="color:red">빨간색</p>
+    <p style="color:rgb(255, 0, 0)">빨간색(rgb)</p>
+    <p style="color:#ff0000">빨간색(hex)</p>
+    <p style="color: #61d4b3;">1</p>
+    <p style="color: #fdd365;">2</p>
+    <p style="color: #fb8d62;">3</p>
+    <p style="color: #fd2eb3;">4</p>
+    <br><br>
+    <hr>
+    <h1>배경</h1>
+    <h2>배경 색</h2>
+    <div style="background-color: #ffc2c2 ;">배경색 지정입니다</div>
+    <div style="background-color: rgb(250, 200, 150);">배경색 지정입니다 (rgb)</div>
+    <h2>배경 이미지</h2>
+    <div class="bgimg">배경이미지입니다</div>
+    <br><br>
+    <h2>배경 포지션</h2>
+    <div class="bgposition">배경 위치 설정</div>
+    <br><br>
+    <h2>배경 고정</h2>
+    <div class="bgattachment">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus reprehenderit dolor expedita sapiente, explicabo repudiandae atque sunt unde, et minima tempora blanditiis vel quos eligendi rem est dolorem dignissimos nostrum.
+        Nobis veritatis obcaecati excepturi necessitatibus eveniet consequuntur, quidem sed error accusantium, ut exercitationem et consectetur dignissimos asperiores vitae, velit modi rem iste dolores voluptatibus? Velit itaque debitis magnam dolorem eligendi!
+        Aliquid, voluptatum. Nobis quidem voluptate illo quibusdam nam quod tenetur blanditiis, aliquam, doloribus impedit, hic ea architecto dicta enim ullam corporis iste est consequuntur dolorem labore expedita. Excepturi, nam quisquam?
+        Dicta, voluptatem. Excepturi eligendi repellendus dolores, minus laudantium nisi perferendis fuga iste sit, nostrum adipisci nemo ex architecto delectus optio aliquid commodi maiores saepe quia. Nam laudantium illum voluptates ex?
+        Ipsum minus, labore harum est ipsa eum reprehenderit nisi quod quibusdam aut tempora cum, ducimus molestias laudantium deserunt accusantium quos at cupiditate! Aperiam accusamus vitae sed delectus porro sequi. Ipsam.
+        Veritatis, a ad? Repellendus necessitatibus voluptatibus amet possimus facere laboriosam impedit id ratione. Sint culpa ab quidem. In, ipsa alias ut explicabo nam facere voluptatibus officia tempora ratione, ab dolorem?
+        Nihil inventore, saepe quam amet pariatur obcaecati necessitatibus dolorem fugiat a quisquam ipsa perferendis consequatur aspernatur? Cum mollitia velit at tempora consectetur deserunt esse perferendis voluptatibus sapiente? Non, accusantium repellendus!
+        Eligendi quae aliquid itaque, dolorum, modi debitis nisi magni animi ea impedit id vero deserunt doloribus maiores esse saepe unde quasi delectus quidem? Maiores rem tempore labore hic sit optio!
+        Quis aperiam consectetur sapiente aliquid porro, cupiditate enim assumenda, ad repudiandae accusantium odit culpa aliquam in nobis. Ipsam iste aut sapiente molestiae natus sed incidunt porro provident harum, rem veniam?
+        Ut ex non cumque suscipit ipsam, eum placeat aspernatur ea aliquid et, saepe consectetur in vel incidunt, quidem laboriosam laudantium? Maiores cupiditate eaque error esse ad voluptates cumque nihil neque.
+        Qui vel rem possimus nobis quam beatae officia. Sint, quasi iure nemo, minima labore, cupiditate quam similique nam laborum ab perferendis officiis explicabo nostrum ea sit neque rerum enim vel.
+        Corrupti optio quis voluptate necessitatibus culpa aut placeat numquam id. Distinctio maiores, tenetur culpa error, perspiciatis eligendi architecto perferendis vel iusto iste tempora porro quas vitae ex illo dicta fugiat!
+        Repellat expedita dolorum, placeat qui quos possimus magnam nobis enim suscipit deserunt ipsa beatae nesciunt, est labore similique illum unde animi soluta molestias autem ex. Distinctio nobis aliquid veritatis esse.
+        Placeat voluptas ipsam alias. Necessitatibus, est minus dicta animi neque velit nihil iusto temporibus, illum a delectus nemo. Quis numquam illo sit, natus at ab quia incidunt ipsam vitae quod.
+        Sint consequatur iste dicta a aliquam error. Ducimus odio officiis saepe rerum provident incidunt laborum voluptates eligendi quas consequatur, autem nisi enim rem molestias ab dolorem numquam a vel eos?
+        Necessitatibus enim cupiditate qui tenetur nobis, mollitia quia suscipit reprehenderit quas voluptas repellat. Molestiae explicabo itaque necessitatibus iusto unde ea hic expedita recusandae atque corporis esse aliquid voluptas, ipsa inventore.
+        Eaque natus quae perspiciatis delectus quibusdam enim pariatur eligendi voluptates, corporis, cumque fuga ea commodi tempore earum? Libero, ad molestias earum quis ex, eaque aut a recusandae error mollitia expedita.
+        Repellendus, nisi esse libero at veniam quidem accusantium odit eum asperiores optio, ut non tenetur porro quam et harum. Sed sint culpa accusantium, at nisi dignissimos necessitatibus suscipit a impedit.
+        Voluptatibus adipisci quod excepturi soluta labore voluptas, eum libero sequi rem, voluptate suscipit odit sunt incidunt pariatur exercitationem architecto fugiat alias eligendi corporis est ab veniam. Nam ut blanditiis debitis.
+        Cumque voluptatibus numquam officia iste quis modi, dicta deleniti nam voluptatum laudantium quaerat temporibus, soluta optio recusandae molestias asperiores adipisci quasi, incidunt iure facere quos eligendi! Earum minima quae fugit.
+    </div>
+    <h2>배경 축약</h2>
+    <div class="bgshorthand">
+        축약 버전 입니다!
+    </div>
+    <br><br>
+    <br><br>
+    <h2>배경 사이즈</h2>
+    <div class="bgsize">
+        배경 크기를 설정하겠습니다
+    </div>
+    <br>
+    <br>
+    <h2>배경 그라디언트</h2>
+    <div class="bggradient">인스타그램처럼!!</div>
+    <br>
+    <div class="bginsta">진짜 인스타그램처럼!!!</div>
+    <br>
+    <br>
+</body>
+
+</html>
