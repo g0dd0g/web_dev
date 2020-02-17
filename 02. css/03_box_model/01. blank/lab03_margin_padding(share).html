@@ -16,6 +16,12 @@
         /* Margin */
         p.individual {
             /* 배경색의 영향 받지 않음 */
+            /* margin: 10px; */
+            margin-top: 10px;
+            margin-right: 20px;
+            margin-bottom: 30px;
+            margin-left: 40px;
+            
         }
 
         p.shorthand {
@@ -24,13 +30,20 @@
 
         p.auto {
             /* margin: auto : 좌-우를 동일하게 주겠다는 의미 (위 아래는 적용 X) */
+            width: 50%;
         }
 
         /* Padding */
-        div.individual {}
+        div.individual {
+            padding-top: 10px;
+            padding-right: 20px;
+            padding-bottom: 30px;
+            padding-left: 40px;
+        }
 
         div.shorthand {
             /* 적용 방식은 border와 동일 */
+            padding: 80px 40px 20px 10px
         }
 
         /* Border-box */
@@ -44,12 +57,13 @@
 
         div.borderBox {
             /* border-box : 마진을 제외한 박스 모델 전체를 width, height 프로퍼티의 대상 영역으로 지정 (직관적 사용)*/
+            box-sizing: border-box;
         }
     </style>
 </head>
 
 <body>
-    <h1>Margin</h1>
+    <h1>Margin</h1>`
     <p class="individual">방향 하나씩 적용</p>
     <p class="shorthand">축약형</p>
     <div>
